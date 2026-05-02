@@ -1,5 +1,6 @@
 const API_URL = "http://127.0.0.1:5000/items";
 
+
 function loadItems(searchQuery = "") {
     let url = API_URL;
     if (searchQuery) {
@@ -34,10 +35,12 @@ function loadItems(searchQuery = "") {
         });
 }
 
+
 function searchItems() {
     const searchValue = document.getElementById("searchInput").value;
     loadItems(searchValue);
 }
+
 
 function deleteItem(id) {
     fetch(API_URL + "/" + id, {
@@ -50,9 +53,11 @@ function deleteItem(id) {
     });
 }
 
+
 if (document.getElementById("items-container")) {
     loadItems();
 }
+
 
 if (document.getElementById("item-form")) {
     document.getElementById("item-form").addEventListener("submit", function(e) {
@@ -72,7 +77,7 @@ if (document.getElementById("item-form")) {
         .then(res => res.json())
         .then(data => {
             alert(data.message || data.error);
-            window.location.href = "index.html";
+            window.location.href = "homePage.html";
         });
     });
 }
