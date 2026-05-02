@@ -8,14 +8,30 @@
 </head>
 
 <body>
-    <nav>
-        <h2>Lost & Found Portal</h2>
-        <a href="homePage.html">Home</a>
-        <a href="itemPage.html">Add Item</a>
+    <nav claas="navbar">
+        <div class="logo">Lost & Found Portal</div>
+        <div>
+            <a href="homePage.html">Home</a>
+            <a href="itemPage.html">Add Item</a>
+        </div>
     </nav>
 
-    <h3>All Items</h3>
-    <div id="items-container"></div>
+    <section class="hero">
+        <h1>Lost Something? Found Something?</h1>
+        <p>Help others by reporting lost or found items.</p>
+        <a href="itemPage.html" class="btn">Add New Item</a>
+    </section>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search items...">
+        <button onclick="searchItems()" class="btn">Search</button>
+    </div>
+
+    <h2 class="section-title">All Items</h2>
+    <div id="items-container" class="card-container"></div>
+
+    <script src="script.js"></script>
+
 
 </body>
 

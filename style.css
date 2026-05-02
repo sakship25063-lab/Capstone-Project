@@ -1,21 +1,77 @@
 body {
     font-family: Arial;
-    margin: 20px;
+    margin: 0;
+    background: #f4f6f9;
 }
 
-nav {
-    background-color: lightblue;
-    padding: 10px;
+.navbar {
+    background: #2f5bd3;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
-nav a {
-    margin-right: 15px;
+.navbar a {
+    color: white;
+    margin-left: 20px;
     text-decoration: none;
     font-weight: bold;
 }
 
-#items-container div {
-    border: 1px solid gray;
-    padding: 10px;
-    margin-bottom: 10px;
+.hero {
+    text-align: center;
+    padding: 40px;
+    background: #e8edff;
+}
+
+.btn {
+    background: #2f5bd3;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box {
+    text-align: center;
+    margin: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+}
+
+.lost {
+    background: red;
+}
+
+.found {
+    background: green;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
 }
