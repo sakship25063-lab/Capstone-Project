@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Lost & Found Portal</div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="add.html">Add Item</a>
+    </div>
+</nav>
+
+<div class="form-container">
+    <h2>Add Lost / Found Item</h2>
+
+    <form id="item-form">
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="category" placeholder="Category">
+        <input type="text" id="location" placeholder="Location">
+        <input type="text" id="contact" placeholder="Contact">
+
+        <select id="type">
+            <option value="">Select Type</option>
+            <option value="Lost">Lost</option>
+            <option value="Found">Found</option>
+        </select>
+
+        <button type="submit" class="btn">Submit Item</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
